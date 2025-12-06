@@ -1,0 +1,95 @@
+Ques: What is List.
+Ans: Lists are mutable, ordered collection that stores elements using dynamic array.It allows heterogeneous datatypes.
+     It supports Indexing(positive and negative both),remove,search,sort and slicing operations. It uses dynamic resizing.
+     E.g . list=[1,2,3,4,5] or list=[Apple,Bannana,Orange]
+
+Ques: What is tupple.
+Ans: tuples are unmutable, ordered collection of elements using static array. It supports indexing,seach,iteration operations. 
+     E.g. t=(10,20,30)
+
+Ques: What is dictionary.
+Ans: Dictionary is an mutable,Unordered Data structure uses key-value pairs , Keys must be hashable and unique.
+     dictionary can be implemented using hash-table. It supports Add/Update,Lookup,Delete,Iterate operations.
+     E.g. dict={"Surname":"Singhal","Age":"22","FirstName":"Yash"}
+
+Ques: Explain Concept of ListComprehension.
+Ans: List Comprehension is  a Compact Syntax for creating new lists from existing iterables using:
+     1.Loops,
+     2.Optional condition
+     3.Optional transformation
+     Syntax : [ expression  for item in iterable  if condition ]
+ E.g. result=["even" if num%2==0: else "odd" for num in range(10)]
+
+Ques: What is lambda function.
+Ans: A lamda function is an anonymus, one line function  created using lambda keyword.
+     Syntax: lamda arguments:expression
+E.g. square=lambda x:x*x
+
+Ques: What is Map fucntion.
+Ans: A map() function applies a function to every element of an iterable and returns a map object (lazy iterator).
+      Syntax: map(function, iterable)
+E.g. nums = [1, 2, 3, 4]
+     squares = list(map(lambda x: x * x, nums))
+     # [1, 4, 9, 16]
+
+Ques: Explain Filter() function.
+Ans: filter() keeps only those elements for which the function returns True.
+     Syntax: filter(function,iterable)
+
+E.g. nums = [1, 2, 3, 4, 5, 6]
+     evens = list(filter(lambda x: x % 2 == 0, nums))
+     # [2, 4, 6]
+
+Ques: Describe whole OOP's concept in breif.
+Ans: OOP's  is a programming paradigm based on the concept of object . It helps in ,
+     1.resusablity
+     2.modularity
+     3.maintainability
+     4.Real-world modeling
+
+     Class: A class is a blueprint or template for creating objects.
+     Objects: A object is an instance of a class.
+
+It has four main pillars:
+1.Inheritance,
+2.Encapsulation
+3.Abstaction
+4.Polymorphism
+
+Ques: Explain init METHOD.
+Ans: __init__ method is used for initialization and called automatically when an object is created.
+
+Ques: Explain Inheritance and its types.
+Ans: Inheritance is defined as the it allows one class to inherit the property of another class.
+     Parent class: Gives Features
+     Child class: Recieves features
+     These are  types of inheritance are :
+     1. Single
+     2. Multiple
+     3. Multilevel
+     4. Hieracial
+     5. Hybrid
+
+Ques: Explain encapsulation.
+Ans: Wrapping data (attributes) and methods in a class. using,
+     _protected members(single underscore)
+     __private members(double underscore)
+
+Ques: Explain Abstraction.
+Ans: Showing only essential features and hiding implementation. using,
+     Abstract classes
+     Interfaces
+Ques: Explain Polymorphism.
+Ans: Polymorphism means one name, many forms.
+     In OOP, polymorphism allows the same function or method to behave differently depending on the object that is calling it.
+     👉 "Same function name → different behavior."
+     It helps achieve flexibility and reusability in code.
+
+Ques: Explain exception handling.
+Ans: Exception Handling is a mechanism that allows a program to detect and manage errors during runtime without crashing.
+     1.try : Block where you write the code that might raise an error.
+     2.except : Block that catches and handles the error.
+     3.else : Runs only when no exception occurs inside try.
+     4.finally : Runs always, whether exception occurs or not (cleanup code).
+
+
