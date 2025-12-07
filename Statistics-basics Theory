@@ -1,0 +1,59 @@
+Ques: Define Mean.
+Ans: Average of all values
+     Formula: mean = (sum of values) / n
+Ques: Define Median.
+Ans: Middle value after sorting.
+     - If even count: median = avg of 2 middle values.
+
+Ques: Defin Mode.
+Ans: - Value that appears the most times.
+
+Ques: Define Variance.
+Ans: - Measures spread from mean.
+     - Formula: variance = Σ(x - mean)² / n
+
+Ques: Define standarrd deviation. 
+Asn: - Square root of variance.
+     - SD = sqrt(variance)
+     - Higher SD → more spread, Lower SD → less spread
+
+Ques: explain PMF.
+Ans: PMF:
+Used for discrete random variables.
+Gives probability of each specific value.
+
+Properties:
+- P(X = x) ≥ 0
+- Σ P(X = x) = 1
+
+
+Ques: Explain PDF.
+Ans: PDF:
+Used for continuous random variables.
+Gives probability *density*, not probability.
+
+Properties:
+- PDF ≥ 0
+- Total area under the curve = 1
+- Actual probability = area under the curve
+  P(a ≤ X ≤ b) = ∫ f(x) dx from a to b
+
+Ques: Expalin CDF.
+Ans: CDF:
+Gives probability that the random variable is less than or equal to a value.
+
+Formula:
+CDF(x) = P(X ≤ x)
+
+For Discrete:
+CDF(x) = Σ P(X = k) for k ≤ x
+
+For Continuous:
+CDF(x) = ∫ f(t) dt from -∞ to x
+
+
+
+
+
+
+
