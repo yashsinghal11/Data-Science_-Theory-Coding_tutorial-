@@ -92,4 +92,41 @@ Ans: Exception Handling is a mechanism that allows a program to detect and manag
      3.else : Runs only when no exception occurs inside try.
      4.finally : Runs always, whether exception occurs or not (cleanup code).
 
+Ques: Explain Decorators in python.
+Ans: A decorator is a higher-order function in Python that allows you to modify or extend the behavior of another function without changing its actual code. 
+     It wraps the function, adds extra logic, and returns the updated function.
+
+Ques: Explain Generators in python.
+Ans: A generator is a special type of function in Python that returns values one at a time using the yield keyword instead of returning all values at once.
+     A generator uses:  yield value
+
+Ques: Define Mutable vs Immutable in python.
+Ans:  Mutable vs Immutable (Short Difference)
+
+      1. Mutable objects can be changed after creation.
+         Immutable objects cannot be changed after creation.
+
+     2. Mutable objects keep the same memory address.
+        Immutable objects create a new memory address when changed.
+
+     3. Mutable examples: list, dict, set.
+        Immutable examples: int, float, str, tuple.
+
+     4. Mutable objects cannot be used as dictionary keys.
+        Immutable objects can be used as dictionary keys.
+
+Ques: Explain Deep VS Shallow copy.
+Ans: Shallow Copy vs Deep Copy (Concise)
+
+     1. Shallow Copy:
+       - Copies only the outer object.
+       - Inner/nested objects are shared.
+       - Changes in nested objects affect the original.
+       - Function: copy.copy()
+
+     2. Deep Copy:
+       - Copies both outer and all nested objects.
+       - No sharing of inner objects.
+       - Changes do NOT affect the original.
+       - Function: copy.deepcopy()
 
