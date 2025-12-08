@@ -1,0 +1,28 @@
+1.Linear Regression :  Linear Regression ek supervised ML algorithm hai jo continuous output predict karta hai — jaise house price, sales, salary, temperature etc.
+2: Cost Function – MSE (Mean Squared Error) : Cost function woh hota hai jo batata hai ki model ki prediction kitni galat j aa sahi hai.  MSE = Mean Squared Error : MSE = (1/n) * Σ (y_pred - y_actual)²
+3.Gradient Descent (Very Important 🌟) : Gradient Descent ek optimization algorithm hai jo MSE ko minimize karta hai. : θ = θ - α * ∂(Cost)/∂θ
+                                          Socho ek pahad (mountain) hai, aur aap bottom par jana chahte ho: 
+                                          Har step me slope check karte ho
+                                          Slope jahan steep ho, wahaan bada step
+                                          Jahan flat ho, chota step
+
+4.Normal Equation : Normal Equation ek direct formula hai jisse bina gradient descent ke exact best weights nikal jaate hain. θ = (XᵀX)⁻¹Xᵀy
+5.Multicollinearity (Glassdoor Verified) : Multicollinearity = jab 2 ya zyada features ek dusre se heavily correlated ho.
+
+                                            For example:
+                                            
+                                            Area in square feet
+                                            
+                                            Area in square meters
+                                            
+                                            Dono same cheez bol rahe = multicollinearity.
+
+
+Variance Inflation Factor (VIF) : VIF identifies multicollinearity.
+
+                                            Formula:
+                                            VIF = 1 / (1 - R²)                                          
+                                            Rules:
+                                            VIF > 5 → moderate multicollinearity
+
+VIF > 10 → severe multicollinearity
