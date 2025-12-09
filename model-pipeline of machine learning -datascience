@@ -1,0 +1,170 @@
+Pipeline Steps
+1️⃣ Data Collection
+
+Collect data from:
+
+CSV/Excel
+
+Databases
+
+APIs
+
+Data Lakes
+
+Store raw files in:
+/data/raw/
+
+2️⃣ Data Cleaning
+
+Performed in data_preprocessing.py:
+
+Handle missing values (mean/median for numeric, mode for categorical)
+
+Remove duplicates
+
+Strip/standardize strings
+
+Fix data types
+
+Handle inconsistent formatting
+
+3️⃣ Exploratory Data Analysis (EDA)
+
+Notebooks contain:
+
+Distribution plots
+
+Correlation heatmap
+
+Outlier detection (IQR or Z-score)
+
+Feature relationships
+
+4️⃣ Feature Engineering
+
+Script: feature_engineering.py
+
+Includes:
+
+✔ Encoding
+
+Label Encoding (ordinal)
+
+One-Hot Encoding (nominal)
+
+✔ Scaling
+
+StandardScaler
+
+MinMaxScaler
+
+✔ Transformations
+
+Log transform (skew reduction)
+
+Polynomial features (if needed)
+
+✔ Feature Selection
+
+VIF (multicollinearity)
+
+Mutual information
+
+SelectKBest
+
+Lasso regularization
+
+5️⃣ Train/Test Split
+
+Typical:
+
+train = 80%
+test = 20%
+
+
+Optional:
+
+Stratified sampling (classification)
+
+Time-series split (if temporal)
+
+6️⃣ Model Training
+
+Script: model_training.py
+
+Models may include:
+
+Linear Regression
+
+Logistic Regression
+
+Decision Tree
+
+Random Forest
+
+XGBoost
+
+SVM
+
+KNN
+
+Naive Bayes
+
+Clustering models (KMeans, DBSCAN)
+
+7️⃣ Hyperparameter Tuning
+
+Performed using:
+
+GridSearchCV
+
+RandomizedSearchCV
+
+Bayesian Optimization (optional)
+
+8️⃣ Model Evaluation
+
+Script: model_evaluation.py
+
+Regression Metrics:
+
+MAE
+
+MSE / RMSE
+
+R² Score
+
+Classification Metrics:
+
+Accuracy
+
+Precision / Recall
+
+F1-score
+
+ROC-AUC
+
+Confusion Matrix
+
+Clustering Metrics:
+
+Inertia
+
+Silhouette Score
+
+9️⃣ Model Export
+
+Save final trained model in /models/ using:
+
+joblib.dump(model, "models/final_model.pkl")
+
+🔄 Reproducibility & Config
+
+All key parameters stored in config.yaml:
+
+train_test_split: 0.2
+scaler: "standard"
+model: "random_forest"
+hyperparameters:
+    n_estimators: 100
+    max_depth: 10
